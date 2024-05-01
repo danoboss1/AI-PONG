@@ -1,12 +1,13 @@
-# Tento main sluzi na player vs player
+# tento subor sluzi na player vs AI
 
 # https://youtu.be/2f6TmKm7yx0?si=xgi_o5pVxgS4ieH2
 # INSPIRATION VIDEO FROM TECH WITH TIM
 
 # NEXT STEP : CREATE NEW FILE WITH NEW GAME CLASS WHERE PLAYER WILL BE LEFT PADDLE, AI RIGHT PADDLE
 # skratka, aby to nejako kvalitne fungovalo a inspiruj sa z toho videa
+# teoreticky to mozem prepisovat do tohoto suboru, tak nemusim nic nove tvorit, len mam 'ten isty' subor dvakrat
 
-# 17:00
+# 36:54
 
 import pygame
 import random
@@ -202,6 +203,7 @@ class Game():
             self.handle_key_input()
             self.update_game_state()
             self.display_winner()
+            print(self.left_score, self.right_score)
 
             self.clock.tick(FPS)
 
